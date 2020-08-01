@@ -1,13 +1,13 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const String = 'a';
+const nuevaString = 'a';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 1;
+const nuevoNum = 1 ;
 
 // Crea una variable booleana:
-const booleana = true;
+const nuevoBool = true ;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-
+ 
   return str;
 }
 
@@ -36,7 +36,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return x + y;
+  return x + y ;
 }
 
 function resta(x, y) {
@@ -48,7 +48,7 @@ function resta(x, y) {
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  return x * y;
+  return x * y ;
 }
 
 function divide(x, y) {
@@ -75,7 +75,7 @@ function tienenMismaLongitud(str1, str2) {
   // Tu código:
   return str1.length == str2.length
    
-
+}
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -136,8 +136,8 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  var cubo= num * num * num;
-  return num;
+  var cubo = num*num*num;
+  return cubo;
 }
 
 function elevar(num, exponent) {
@@ -178,7 +178,9 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola  '+ nombre + '!';
+  nombre = '"Hola ' +nombre+ '!"';
+  return nombre;
+
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
