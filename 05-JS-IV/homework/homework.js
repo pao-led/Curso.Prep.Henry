@@ -26,6 +26,7 @@ function agregarPropiedad(objeto, property) {
 objeto[property] = null;
 
 return objeto;
+}
 
 
 function invocarMetodo(objeto, metodo) {
@@ -34,7 +35,7 @@ function invocarMetodo(objeto, metodo) {
   // Nada necesita ser devuelto ("returned")
   // Tu código:
 objeto[metodo]();
-
+}
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
@@ -145,10 +146,8 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPrmeium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-
-for(var i=0; i< usuarios.length; i++){
-usuarios[i].esPrmeium = true;
-
+for(var i = 0; i < usuarios.length; i++){
+  usuarios[i].esPremium=true;
 }
  return usuarios;
 
@@ -179,11 +178,12 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-producto.calcularPrecioDescuento = funcion() 
+  producto.calcularPrecioDescuento = function() {
 
   var descuento = producto.precio * producto.porcentajeDeDescuento;
   return producto.precio-descuento;
-
+  }
+  return producto;
 }
 
 // No modificar nada debajo de esta línea
